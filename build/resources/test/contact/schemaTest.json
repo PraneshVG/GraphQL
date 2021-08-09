@@ -1,0 +1,10 @@
+{
+  "data": {
+    "history": {
+      "details": "#string",
+      "event_date_utc": "#string",
+      "id": "#string",
+      "title": "#string"
+    }
+  }
+}

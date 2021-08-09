@@ -1,0 +1,8 @@
+query launchesPastExample($id: ID!){
+    history(id: $id) {
+        details
+        event_date_utc
+        id
+        title
+    }
+}

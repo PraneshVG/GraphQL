@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.graphql</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-08 10:16:21 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Test for GraphQL Schema and Resolver</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/graphql.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test GraphQL Schema and Resolver</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Test for GraphQL Schema and Resolver</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2361</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl + &#39;/graphql&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>text query =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8">{
+  launchesPast {
+    mission_name
+    launch_date_local
+  }
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {query: &#39;#(query)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">32</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2305</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">22:16:19.807 request:
+1 &gt; POST https://api.spacex.land/graphql
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 80
+1 &gt; Host: api.spacex.land
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.6)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;query&quot;:&quot;{\n  launchesPast {\n    mission_name\n    launch_date_local\n  }\n}&quot;}
+
+22:16:21.834 response time in milliseconds: 2024
+1 &lt; 200
+1 &lt; Server: Cowboy
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 8856
+1 &lt; Etag: W/&quot;2298-ca+Y0NHg3fbyZnWNSfKnRs4W7UU&quot;
+1 &lt; Date: Sun, 08 Aug 2021 16:46:21 GMT
+1 &lt; Via: 1.1 vegur
+{&quot;data&quot;:{&quot;launchesPast&quot;:[{&quot;mission_name&quot;:&quot;Starlink-15 (v1.0)&quot;,&quot;launch_date_local&quot;:&quot;2020-10-24T11:31:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Sentinel-6 Michael Freilich&quot;,&quot;launch_date_local&quot;:&quot;2020-11-21T09:17:00-08:00&quot;},{&quot;mission_name&quot;:&quot;Crew-1&quot;,&quot;launch_date_local&quot;:&quot;2020-11-15T19:27:00-05:00&quot;},{&quot;mission_name&quot;:&quot;GPS III SV04 (Sacagawea)&quot;,&quot;launch_date_local&quot;:&quot;2020-11-05T18:24:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-14 (v1.0)&quot;,&quot;launch_date_local&quot;:&quot;2020-10-24T11:31:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-13 (v1.0)&quot;,&quot;launch_date_local&quot;:&quot;2020-10-18T08:25:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-12 (v1.0)&quot;,&quot;launch_date_local&quot;:&quot;2020-10-06T07:29:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-11 (v1.0)&quot;,&quot;launch_date_local&quot;:&quot;2020-09-03T08:46:00-04:00&quot;},{&quot;mission_name&quot;:&quot;SAOCOM 1B, GNOMES-1, Tyvak-0172&quot;,&quot;launch_date_local&quot;:&quot;2020-08-30T19:18:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-10 (v1.0) &amp; SkySat 19-21&quot;,&quot;launch_date_local&quot;:&quot;2020-08-18T10:31:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-9 (v1.0) &amp; BlackSky Global 5-6&quot;,&quot;launch_date_local&quot;:&quot;2020-08-07T01:12:00-04:00&quot;},{&quot;mission_name&quot;:&quot;ANASIS-II&quot;,&quot;launch_date_local&quot;:&quot;2020-07-20T17:30:00-04:00&quot;},{&quot;mission_name&quot;:&quot;GPS III SV03 (Columbus)&quot;,&quot;launch_date_local&quot;:&quot;2020-06-30T15:55:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink-8 &amp; SkySat 16-18&quot;,&quot;launch_date_local&quot;:&quot;2020-06-13T05:21:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 7&quot;,&quot;launch_date_local&quot;:&quot;2020-06-03T21:25:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CCtCap Demo Mission 2&quot;,&quot;launch_date_local&quot;:&quot;2020-05-30T15:22:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 6&quot;,&quot;launch_date_local&quot;:&quot;2020-04-22T15:30:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 5&quot;,&quot;launch_date_local&quot;:&quot;2020-03-18T08:16:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-20&quot;,&quot;launch_date_local&quot;:&quot;2020-03-06T23:50:31-05:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 4&quot;,&quot;launch_date_local&quot;:&quot;2020-02-17T10:05:55-05:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 3&quot;,&quot;launch_date_local&quot;:&quot;2020-01-29T09:06:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Crew Dragon In Flight Abort Test&quot;,&quot;launch_date_local&quot;:&quot;2020-01-19T09:00:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 2&quot;,&quot;launch_date_local&quot;:&quot;2020-01-06T21:19:00-05:00&quot;},{&quot;mission_name&quot;:&quot;JCSat 18 / Kacific 1&quot;,&quot;launch_date_local&quot;:&quot;2019-12-16T19:10:00-05:00&quot;},{&quot;mission_name&quot;:&quot;CRS-19&quot;,&quot;launch_date_local&quot;:&quot;2019-12-05T12:29:23-05:00&quot;},{&quot;mission_name&quot;:&quot;Starlink 1&quot;,&quot;launch_date_local&quot;:&quot;2019-11-11T09:56:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Amos-17&quot;,&quot;launch_date_local&quot;:&quot;2019-08-06T18:52:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-18&quot;,&quot;launch_date_local&quot;:&quot;2019-07-25T18:01:00-04:00&quot;},{&quot;mission_name&quot;:&quot;STP-2&quot;,&quot;launch_date_local&quot;:&quot;2019-06-24T23:30:00-04:00&quot;},{&quot;mission_name&quot;:&quot;RADARSAT Constellation&quot;,&quot;launch_date_local&quot;:&quot;2019-06-12T07:17:00-07:00&quot;},{&quot;mission_name&quot;:&quot;Starlink v0.9&quot;,&quot;launch_date_local&quot;:&quot;2019-05-23T22:30:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-17&quot;,&quot;launch_date_local&quot;:&quot;2019-05-04T02:48:00-04:00&quot;},{&quot;mission_name&quot;:&quot;ArabSat 6A&quot;,&quot;launch_date_local&quot;:&quot;2019-04-11T18:35:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CCtCap Demo Mission 1&quot;,&quot;launch_date_local&quot;:&quot;2019-03-02T02:45:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Nusantara Satu (PSN-6) / S5 / Beresheet&quot;,&quot;launch_date_local&quot;:&quot;2019-02-21T20:45:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 8&quot;,&quot;launch_date_local&quot;:&quot;2019-01-11T07:31:00-08:00&quot;},{&quot;mission_name&quot;:&quot;GPS III SV01&quot;,&quot;launch_date_local&quot;:&quot;2018-12-23T08:51:00-05:00&quot;},{&quot;mission_name&quot;:&quot;CRS-16&quot;,&quot;launch_date_local&quot;:&quot;2018-12-05T13:16:00-05:00&quot;},{&quot;mission_name&quot;:&quot;SSO-A&quot;,&quot;launch_date_local&quot;:&quot;2018-12-03T10:34:00-08:00&quot;},{&quot;mission_name&quot;:&quot;Es’hail 2&quot;,&quot;launch_date_local&quot;:&quot;2018-11-15T15:46:00-05:00&quot;},{&quot;mission_name&quot;:&quot;SAOCOM 1A&quot;,&quot;launch_date_local&quot;:&quot;2018-10-07T19:22:00-07:00&quot;},{&quot;mission_name&quot;:&quot;Telstar 18V&quot;,&quot;launch_date_local&quot;:&quot;2018-09-10T00:45:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Merah Putih&quot;,&quot;launch_date_local&quot;:&quot;2018-08-07T01:18:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 7&quot;,&quot;launch_date_local&quot;:&quot;2018-07-25T04:39:26-07:00&quot;},{&quot;mission_name&quot;:&quot;Telstar 19V&quot;,&quot;launch_date_local&quot;:&quot;2018-07-22T01:50:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-15&quot;,&quot;launch_date_local&quot;:&quot;2018-06-29T05:42:00-04:00&quot;},{&quot;mission_name&quot;:&quot;SES-12&quot;,&quot;launch_date_local&quot;:&quot;2018-06-04T00:45:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 6&quot;,&quot;launch_date_local&quot;:&quot;2018-05-22T12:47:58-08:00&quot;},{&quot;mission_name&quot;:&quot;Bangabandhu-1&quot;,&quot;launch_date_local&quot;:&quot;2018-05-11T16:14:00-04:00&quot;},{&quot;mission_name&quot;:&quot;TESS&quot;,&quot;launch_date_local&quot;:&quot;2018-04-18T18:51:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-14&quot;,&quot;launch_date_local&quot;:&quot;2018-04-02T16:30:41-04:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 5&quot;,&quot;launch_date_local&quot;:&quot;2018-03-30T07:13:51-08:00&quot;},{&quot;mission_name&quot;:&quot;Hispasat 30W-6&quot;,&quot;launch_date_local&quot;:&quot;2018-03-06T00:33:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Paz / Starlink Demo&quot;,&quot;launch_date_local&quot;:&quot;2018-02-22T06:17:00-08:00&quot;},{&quot;mission_name&quot;:&quot;Falcon Heavy Test Flight&quot;,&quot;launch_date_local&quot;:&quot;2018-02-06T15:45:00-05:00&quot;},{&quot;mission_name&quot;:&quot;SES-16 / GovSat-1&quot;,&quot;launch_date_local&quot;:&quot;2018-01-31T16:25:00-05:00&quot;},{&quot;mission_name&quot;:&quot;ZUMA&quot;,&quot;launch_date_local&quot;:&quot;2018-01-07T20:00:00-05:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 4&quot;,&quot;launch_date_local&quot;:&quot;2017-12-22T17:27:23-08:00&quot;},{&quot;mission_name&quot;:&quot;CRS-13&quot;,&quot;launch_date_local&quot;:&quot;2017-12-15T10:36:00-05:00&quot;},{&quot;mission_name&quot;:&quot;KoreaSat 5A&quot;,&quot;launch_date_local&quot;:&quot;2017-10-30T15:34:00-04:00&quot;},{&quot;mission_name&quot;:&quot;SES-11 / Echostar 105&quot;,&quot;launch_date_local&quot;:&quot;2017-10-11T18:53:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 3&quot;,&quot;launch_date_local&quot;:&quot;2017-10-09T05:37:00-07:00&quot;},{&quot;mission_name&quot;:&quot;Boeing X-37B OTV-5&quot;,&quot;launch_date_local&quot;:&quot;2017-09-07T09:50:00-04:00&quot;},{&quot;mission_name&quot;:&quot;FormoSat-5&quot;,&quot;launch_date_local&quot;:&quot;2017-08-24T11:50:00-07:00&quot;},{&quot;mission_name&quot;:&quot;CRS-12&quot;,&quot;launch_date_local&quot;:&quot;2017-08-14T12:31:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Intelsat 35e&quot;,&quot;launch_date_local&quot;:&quot;2017-07-05T19:35:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 2&quot;,&quot;launch_date_local&quot;:&quot;2017-06-25T13:25:00-07:00&quot;},{&quot;mission_name&quot;:&quot;BulgariaSat-1&quot;,&quot;launch_date_local&quot;:&quot;2017-06-23T15:10:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-11&quot;,&quot;launch_date_local&quot;:&quot;2017-06-03T17:07:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Inmarsat-5 F4&quot;,&quot;launch_date_local&quot;:&quot;2017-05-15T19:21:00-04:00&quot;},{&quot;mission_name&quot;:&quot;NROL-76&quot;,&quot;launch_date_local&quot;:&quot;2017-05-01T07:15:00-04:00&quot;},{&quot;mission_name&quot;:&quot;SES-10&quot;,&quot;launch_date_local&quot;:&quot;2017-03-30T18:27:00-04:00&quot;},{&quot;mission_name&quot;:&quot;EchoStar 23&quot;,&quot;launch_date_local&quot;:&quot;2017-03-16T02:00:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-10&quot;,&quot;launch_date_local&quot;:&quot;2017-02-19T10:39:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Iridium NEXT Mission 1&quot;,&quot;launch_date_local&quot;:&quot;2017-01-14T10:54:00-07:00&quot;},{&quot;mission_name&quot;:&quot;Amos-6&quot;,&quot;launch_date_local&quot;:&quot;2016-09-01T09:07:00-04:00&quot;},{&quot;mission_name&quot;:&quot;JCSAT-16&quot;,&quot;launch_date_local&quot;:&quot;2016-08-14T01:26:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-9&quot;,&quot;launch_date_local&quot;:&quot;2016-07-18T00:45:00-04:00&quot;},{&quot;mission_name&quot;:&quot;ABS-2A / Eutelsat 117W B&quot;,&quot;launch_date_local&quot;:&quot;2016-06-15T10:29:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Thaicom 8&quot;,&quot;launch_date_local&quot;:&quot;2016-05-27T17:39:00-04:00&quot;},{&quot;mission_name&quot;:&quot;JCSAT-2B&quot;,&quot;launch_date_local&quot;:&quot;2016-05-06T01:21:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-8&quot;,&quot;launch_date_local&quot;:&quot;2016-04-08T16:43:00-04:00&quot;},{&quot;mission_name&quot;:&quot;SES-9&quot;,&quot;launch_date_local&quot;:&quot;2016-03-04T19:35:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Jason 3&quot;,&quot;launch_date_local&quot;:&quot;2016-01-17T08:42:00-07:00&quot;},{&quot;mission_name&quot;:&quot;OG-2 Mission 2&quot;,&quot;launch_date_local&quot;:&quot;2015-12-22T21:29:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-7&quot;,&quot;launch_date_local&quot;:&quot;2015-06-28T10:21:00-04:00&quot;},{&quot;mission_name&quot;:&quot;TürkmenÄlem 52°E / MonacoSAT&quot;,&quot;launch_date_local&quot;:&quot;2015-04-27T19:03:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-6&quot;,&quot;launch_date_local&quot;:&quot;2015-04-14T16:10:00-04:00&quot;},{&quot;mission_name&quot;:&quot;ABS-3A / Eutelsat 115W B&quot;,&quot;launch_date_local&quot;:&quot;2015-03-02T23:50:00-04:00&quot;},{&quot;mission_name&quot;:&quot;DSCOVR&quot;,&quot;launch_date_local&quot;:&quot;2015-02-11T19:03:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-5&quot;,&quot;launch_date_local&quot;:&quot;2015-01-10T05:47:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-4&quot;,&quot;launch_date_local&quot;:&quot;2014-09-21T01:52:00-04:00&quot;},{&quot;mission_name&quot;:&quot;AsiaSat 6&quot;,&quot;launch_date_local&quot;:&quot;2014-09-07T01:00:00-04:00&quot;},{&quot;mission_name&quot;:&quot;AsiaSat 8&quot;,&quot;launch_date_local&quot;:&quot;2014-08-05T04:00:00-04:00&quot;},{&quot;mission_name&quot;:&quot;OG-2 Mission 1&quot;,&quot;launch_date_local&quot;:&quot;2014-07-14T11:15:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-3&quot;,&quot;launch_date_local&quot;:&quot;2014-04-18T15:25:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Thaicom 6&quot;,&quot;launch_date_local&quot;:&quot;2014-01-06T14:06:00-04:00&quot;},{&quot;mission_name&quot;:&quot;SES-8&quot;,&quot;launch_date_local&quot;:&quot;2013-12-03T18:41:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CASSIOPE&quot;,&quot;launch_date_local&quot;:&quot;2013-09-29T09:00:00-07:00&quot;},{&quot;mission_name&quot;:&quot;CRS-2&quot;,&quot;launch_date_local&quot;:&quot;2013-03-01T15:10:00-04:00&quot;},{&quot;mission_name&quot;:&quot;CRS-1&quot;,&quot;launch_date_local&quot;:&quot;2012-10-08T20:35:00-04:00&quot;},{&quot;mission_name&quot;:&quot;COTS 2&quot;,&quot;launch_date_local&quot;:&quot;2012-05-22T03:44:00-04:00&quot;},{&quot;mission_name&quot;:&quot;COTS 1&quot;,&quot;launch_date_local&quot;:&quot;2010-12-08T11:43:00-04:00&quot;},{&quot;mission_name&quot;:&quot;Falcon 9 Test Flight&quot;,&quot;launch_date_local&quot;:&quot;2010-06-04T14:45:00-04:00&quot;},{&quot;mission_name&quot;:&quot;RazakSat&quot;,&quot;launch_date_local&quot;:&quot;2009-07-13T15:35:00+12:00&quot;},{&quot;mission_name&quot;:&quot;RatSat&quot;,&quot;launch_date_local&quot;:&quot;2008-09-28T11:15:00+12:00&quot;},{&quot;mission_name&quot;:&quot;Trailblazer&quot;,&quot;launch_date_local&quot;:&quot;2008-08-03T15:34:00+12:00&quot;},{&quot;mission_name&quot;:&quot;DemoSat&quot;,&quot;launch_date_local&quot;:&quot;2007-03-21T13:10:00+12:00&quot;},{&quot;mission_name&quot;:&quot;FalconSat&quot;,&quot;launch_date_local&quot;:&quot;2006-03-25T10:30:00+12:00&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.data.launchesPast[0].mission_name == &#39;Starlink-15 (v1.0)&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.data.launchesPast[0].mission_name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $.data.launchesPast[0].launch_date_local == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.error == &#39;#notpresent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
